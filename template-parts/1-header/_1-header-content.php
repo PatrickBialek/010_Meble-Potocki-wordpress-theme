@@ -2,6 +2,7 @@
 	<div class="header__logo-box">
 		<img src="<?php echo get_theme_file_uri( 'assets/images/meble-potocki-logo.jpg' ); ?>" alt="Potocki logo">
 	</div>
+	
 	<nav class="header__nav">
 
 	<?php wp_nav_menu( [ 
