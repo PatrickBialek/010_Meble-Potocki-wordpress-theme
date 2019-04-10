@@ -1,0 +1,180 @@
+.form {
+	padding: 8rem 0rem;
+	justify-content: center;
+
+	@include smallScreen {
+		padding: 5rem 0rem;
+	}
+
+	@include tinyScreen {
+		padding: 4rem 0rem;
+	}
+
+	&,
+	&__content,
+	&__form-row,
+	&__textarea {
+		width: 100%;
+	}
+
+	&,
+	&__content,
+	&__contact-data,
+	&__form-box,
+	&__form-row {
+		display: flex;
+	}
+
+	&__content {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0rem 1rem;
+
+		@include smallScreen {
+			flex-direction: column;
+			padding: 0 2rem;
+		}
+	}
+
+	&__info-box {
+		width: 40%;
+		padding: 1rem;
+		box-sizing: border-box;
+
+		@include smallScreen {
+			width: 100%;
+			text-align: center;
+		}
+
+		& p {
+			line-height: 1.33;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__bold {
+		font-weight: bold;
+	}
+
+	&__contact-data {
+		margin-top: 2rem;
+		flex-direction: column;
+
+		@include smallScreen {
+			text-align: center;
+		}
+
+		& p,
+		& span {
+			color: $black;
+			font-size: 1.6rem;
+			line-height: 2.6rem;
+		}
+
+		&>p {
+			margin-bottom: 0;
+		}
+	}
+
+	&__form-box {
+		width: 60%;
+		padding: 1rem 1rem 1rem 5rem;
+		box-sizing: border-box;
+		flex-direction: column;
+
+		@include smallScreen {
+			margin-top: 4rem;
+			width: 100%;
+			padding: 0rem;
+		}
+	}
+
+	&__form-row {
+		justify-content: space-between;
+
+		@include tinyScreen {
+			flex-direction: column;
+		}
+	}
+
+	&__text {
+		color: $black;
+		padding: 14px 18px;
+		font-size: 1.6rem;
+		border: 1px solid $border-color;
+		border-radius: 0;
+		outline: 0;
+		-webkit-appearance: none;
+		cursor: pointer;
+		box-sizing: border-box;
+		margin-bottom: 1rem;
+
+		&::placeholder {
+			font-size: 1.6rem;
+			opacity: 0.7;
+		}
+
+		&--marign-right {
+			margin-right: 1%;
+		}
+
+		&--50 {
+			width: 97.5%;
+
+			@include smallScreen {
+				width: 100%;
+			}
+		}
+
+		&--100 {
+			width: 100%;
+		}
+	}
+
+	&__textarea {
+		color: $black;
+		padding: 14px 18px;
+		font-size: 1.6rem;
+		resize: none;
+		height: 150px;
+		outline: none;
+		border: 1px solid $border-color;
+		box-sizing: border-box;
+		margin-bottom: 1rem;
+
+		&::placeholder {
+			font-size: 1.6rem;
+			opacity: 0.7;
+		}
+	}
+
+	&__send {
+		border: solid 2px $gold;
+		padding: 1.2rem 2.4rem;
+		color: $gold;
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 2rem;
+		transition: background-color 0.35s, border-color 0.35s, color 0.1s cubic-bezier(0.77, 0, 0.175, 1);
+
+		&:hover {
+			color: $white;
+			background-color: $gold;
+			cursor: pointer;
+		}
+	}
+}
+
+.wpcf7-not-valid-tip,
+.screen-reader-response {
+	display: none;
+}
+
+.wpcf7-validation-errors {
+	color: red;
+	margin-top: 1rem;
+}
+
+.wpcf7-response-output {
+	margin-top: 1rem;
+}

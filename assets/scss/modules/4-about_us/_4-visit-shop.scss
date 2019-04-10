@@ -1,0 +1,35 @@
+.visit-shop {
+	display: flex;
+	padding: 8rem 2rem;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-position: center;
+
+	@include smallScreen {
+		padding: 5rem 2rem;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 1400px;
+	}
+
+	a {
+		text-decoration: none;
+		background-color: #9d7f65;
+		color: #fff;
+		padding: 12px 24px;
+		display: block;
+		text-align: center;
+		width: 120px;
+		margin: 2rem auto 0;
+		transition: background-color .2s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $black;
+		}
+	}
+}

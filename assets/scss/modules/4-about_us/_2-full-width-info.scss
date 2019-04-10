@@ -1,0 +1,21 @@
+.full-width-info {
+	padding: 8rem 2rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-position: center;
+	flex-direction: column;
+
+	@include smallScreen {
+		padding: 5rem 2rem;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 1300px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}

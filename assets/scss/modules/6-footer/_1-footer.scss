@@ -1,0 +1,15 @@
+.footer {
+	display: flex;
+	width: 100%;
+	padding: 1.6rem;
+	background-color: $dark-grey;
+	color: $light-grey;
+	text-align: center;
+	flex-direction: column;
+	box-sizing: border-box;
+
+	& span {
+		padding: .2rem 0rem;
+		display: block;
+	}
+}

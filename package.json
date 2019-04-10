@@ -1,0 +1,22 @@
+{
+  "name": "meble-potocki",
+  "version": "1.0.0",
+  "description": "Theme for meble potocki company",
+  "main": "index.js",
+  "scripts": {
+    "compile:css": "node-sass assets/scss/style.scss style.css -w",
+    "compile:js": "webpack --mode development"
+  },
+  "author": "Patryk Białek",
+  "license": "ISC",
+  "devDependencies": {
+    "flickity": "^2.2.0",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "isotope": "^1.0.0-alpha.3",
+    "isotope-layout": "^3.0.6"
+  }
+}

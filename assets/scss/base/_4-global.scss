@@ -1,0 +1,16 @@
+html {
+	font-size: 62.5%;
+
+	@include smallScreen {
+		font-size: 56.5%;
+	}
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+body>* {
+	font-family: 'Raleway', sans-serif;
+}
