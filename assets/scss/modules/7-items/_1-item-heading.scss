@@ -1,0 +1,19 @@
+.item-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	height: 150px;
+	background-color: $dark-grey;
+
+	&,
+	&__content {
+		display: flex;
+	}
+
+	&__content {
+		text-align: center;
+		width: 80%;
+		max-width: 1300px;
+	}
+}

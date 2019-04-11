@@ -836,3 +836,37 @@ body > * {
   .footer span {
     padding: .2rem 0rem;
     display: block; }
+
+.item-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 150px;
+  background-color: #373737; }
+  .item-heading, .item-heading__content {
+    display: flex; }
+  .item-heading__content {
+    text-align: center;
+    width: 80%;
+    max-width: 1300px; }
+
+.info {
+  padding: 6rem 0rem;
+  justify-content: center; }
+  .info, .info__content {
+    display: flex; }
+  .info__content {
+    width: 1300px; }
+  .info__full-box, .info__half-box {
+    box-sizing: border-box; }
+  .info__full-box {
+    width: 100%; }
+  .info__half-box {
+    max-width: 650px; }
+    .info__half-box:nth-child(1) {
+      padding-right: 1.75rem; }
+    .info__half-box:nth-child(2) {
+      padding-right: 1.75rem; }
+    .info__half-box p:not(:last-child) {
+      margin-bottom: 1.75rem; }

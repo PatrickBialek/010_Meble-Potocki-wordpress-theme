@@ -1,0 +1,40 @@
+.info {
+	padding: 6rem 0rem;
+	justify-content: center;
+
+	&,
+	&__content {
+		display: flex;
+	}
+
+	&__content {
+		width: 1300px;
+	}
+
+	&__full-box,
+	&__half-box {
+		box-sizing: border-box;
+	}
+
+	&__full-box {
+		width: 100%;
+	}
+
+	&__half-box {
+		max-width: 650px;
+
+		&:nth-child(1) {
+			padding-right: 1.75rem;
+		}
+
+		&:nth-child(2) {
+			padding-right: 1.75rem;
+		}
+
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 1.75rem;
+			}
+		}
+	}
+}

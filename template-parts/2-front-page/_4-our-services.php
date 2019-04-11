@@ -40,7 +40,7 @@
 					$item_name = get_sub_field( 'services_item_name' );
 
 					// Create full link to chosen product
-					$item_link = get_site_url() . $item_link;
+					$item_link = get_site_url() . '/' .$item_link;
 
 					?>
 

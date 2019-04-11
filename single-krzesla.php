@@ -8,7 +8,7 @@ include get_template_directory() . "/template-parts/7-items/_1-heading.php";
 
 include get_template_directory() . "/template-parts/7-items/_2-info.php";
 
-include get_template_directory() . "/template-parts/7-items/_3-gallery.php";
+include get_template_directory() . "/template-parts/7-items/_3-gallery-item.php";
 
 
 ?>
