@@ -1,7 +1,7 @@
 const btns = Array.from(document.querySelectorAll('.services__button'));
 const galleryItems = Array.from(document.querySelectorAll('.services__image-box'));
 
-let filters = [];
+let filters = ["table", "cupboard", "chair"];
 
 function filteringElements() {
 	galleryItems.forEach(galleryItem => {

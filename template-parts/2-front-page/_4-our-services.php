@@ -18,7 +18,7 @@
 						?>
 
 					<div class="services__select-box">
-						<button class="services__button" data-filter="<?php echo $btn_data_filter ?>"><?php echo $btn_text?></button>
+						<button class="services__button active" data-filter="<?php echo $btn_data_filter ?>"><?php echo $btn_text?></button>
 					</div>
 
 					<?php endwhile; endif; 
