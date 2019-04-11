@@ -27,7 +27,9 @@ function chair_post_type() {
     'public' => true,
     'labels' => array(
       'name' => 'Krzesła',
-      'add_new_item' => 'Dodaj nowe krzesło'
+      'add_new_item' => 'Dodaj nowe krzesło',
+      'edit_item' => 'Edytuj krzesło',
+      'all_items' => 'Wszystkie krzesła'
     ),
     'menu_icon' => 'dashicons-cart'
   ]);
@@ -39,7 +41,8 @@ function table_post_type() {
     'labels' => array(
       'name' => 'Stoły',
       'add_new_item' => 'Dodaj nowy stół',
-      'edit_item' => 'Edytuj stół'
+      'edit_item' => 'Edytuj stół',
+      'all_items' => 'Wszystkie krzesła'
     ),
     'menu_icon' => 'dashicons-cart'
   ]);
@@ -51,7 +54,8 @@ function cupboard_post_type() {
     'labels' => array(
       'name' => 'Ławy',
       'add_new_item' => 'Dodaj nową ławę',
-      'edit_item' => 'Edytuj ławę'
+      'edit_item' => 'Edytuj ławę',
+      'all_items' => 'Wszystkie krzesła'
     ),
     'menu_icon' => 'dashicons-cart'
   ]);
