@@ -29,35 +29,33 @@
 	<div class="services__pictures-container" id="isotope-elements"> 
 
 	<?php if( have_rows( 'services_gallery' ) ):
-		while( have_rows( 'services_gallery' ) ): the_row(); ?>
+		while( have_rows( 'services_gallery' ) ): the_row();
 
-			<div class="services__row">
-
-			<?php if( have_rows( 'services_row') ):
-				while( have_rows( 'services_row') ): the_row(); ?>
-
-				<?php if( have_rows('gallery_box') ): 
-					while( have_rows('gallery_box') ): the_row(); 
+			if( have_rows('gallery_box') ): 
+				while( have_rows('gallery_box') ): the_row(); 
 
 					$single_picture = get_sub_field( 'services_picture' );
 					$item_link = get_sub_field( 'services_item_link' );
 					$item_type = get_sub_field( 'services_item_type' );
+					$item_name = get_sub_field( 'services_item_name' );
+
+					// Create full link to chosen product
+					$item_link = get_site_url() . $item_link;
 
 					?>
 
 					<div class="services__image-box" data-filter="<?php echo $item_type?>">
 						<a href="<?php echo $item_link?>">
 							<img src="<?php echo $single_picture['url'] ?>" alt="<?php echo $single_picture['alt']?>">
+							<div class="services__hover-info">
+								<span><?php echo $item_name ?></span>
+							</div>
 						</a>
 					</div>
 
-				<?php endwhile; endif; ?>
+			<?php endwhile; endif;
+		endwhile; endif; ?>
 
-			<?php endwhile; endif; ?>
-
-			</div>
-
-	<?php endwhile; endif; ?>
-	</div>
+		</div>
 	</div>
 </section>

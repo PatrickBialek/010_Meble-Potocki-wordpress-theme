@@ -21,3 +21,42 @@ add_filter('page_css_class', 'my_css_attributes_filter', 100, 1);
 function my_css_attributes_filter($var) {
   return is_array($var) ? array_intersect($var, array('current-menu-item')) : '';
 }
+
+function chair_post_type() {
+  register_post_type('krzesła', [
+    'public' => true,
+    'labels' => array(
+      'name' => 'Krzesła',
+      'add_new_item' => 'Dodaj nowe krzesło'
+    ),
+    'menu_icon' => 'dashicons-cart'
+  ]);
+}
+
+function table_post_type() {
+  register_post_type('stoły', [
+    'public' => true,
+    'labels' => array(
+      'name' => 'Stoły',
+      'add_new_item' => 'Dodaj nowy stół',
+      'edit_item' => 'Edytuj stół'
+    ),
+    'menu_icon' => 'dashicons-cart'
+  ]);
+}
+
+function cupboard_post_type() {
+  register_post_type('ławy', [
+    'public' => true, 
+    'labels' => array(
+      'name' => 'Ławy',
+      'add_new_item' => 'Dodaj nową ławę',
+      'edit_item' => 'Edytuj ławę'
+    ),
+    'menu_icon' => 'dashicons-cart'
+  ]);
+}
+
+add_action('init', 'chair_post_type');
+add_action('init', 'table_post_type');
+add_action('init', 'cupboard_post_type');
