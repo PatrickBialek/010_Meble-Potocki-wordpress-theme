@@ -239,7 +239,7 @@ body > * {
     align-items: center; }
     @media (max-width: 900px) {
       .header__nav {
-        position: absolute;
+        position: fixed;
         z-index: 5;
         background-color: #fff;
         height: 100vh;

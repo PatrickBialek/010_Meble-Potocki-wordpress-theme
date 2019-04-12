@@ -54,7 +54,7 @@
 		align-items: center;
 
 		@include smallScreen {
-			position: absolute;
+			position: fixed;
 			z-index: 5;
 			background-color: #fff;
 			height: 100vh;
