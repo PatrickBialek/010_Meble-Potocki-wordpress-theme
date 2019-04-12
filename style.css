@@ -206,7 +206,13 @@ body > * {
 .header {
   height: 80px;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  z-index: 10;
+  border-bottom: none; }
+  .header--scroll {
+    border-bottom: 1px solid #373737 !important; }
   .header.active span:nth-last-child(1) {
     transform: rotate(-45deg) translate(-2px, -1px); }
   .header.active span:nth-last-child(2) {
@@ -332,7 +338,7 @@ body > * {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 80px); }
+  height: 100vh; }
 
 #carousel-container {
   height: 100%;

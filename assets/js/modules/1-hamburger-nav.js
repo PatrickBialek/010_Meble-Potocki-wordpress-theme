@@ -24,5 +24,17 @@ function mobileMenuHandler() {
 	}
 }
 
+function scrollAnimation() {
+	const y = window.scrollY;
+	const header = document.querySelector('#website-main-header');
+
+	if (y > 0) {
+		header.classList.add('header--scroll');
+	} else if (y === 0) {
+		header.classList.remove('header--scroll');
+	}
+}
+
 hamburgerIcon.addEventListener('click', mobileMenuHandler);
 document.addEventListener('DOMContentLoaded', markCurrentLink);
+document.addEventListener('scroll', scrollAnimation);
