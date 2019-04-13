@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "isotope": "^1.0.0-alpha.3",
-    "isotope-layout": "^3.0.6"
+    "isotope-layout": "^3.0.6",
+    "lg-thumbnail": "^1.1.0",
+    "lg-zoom": "^1.1.0",
+    "lightgallery.js": "^1.1.3"
   }
 }

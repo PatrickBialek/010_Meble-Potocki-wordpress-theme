@@ -1,5 +1,5 @@
 .info {
-	padding: 6rem 0rem;
+	padding: 6rem 2rem 2rem;
 	justify-content: center;
 
 	&,
@@ -9,6 +9,7 @@
 
 	&__content {
 		width: 1300px;
+		flex-direction: column;
 	}
 
 	&__full-box,
@@ -17,11 +18,21 @@
 	}
 
 	&__full-box {
-		width: 100%;
+		display: flex;
+
+		&:last-child {
+			flex-direction: column;
+			text-align: center;
+			padding-top: 5rem;
+
+			& h2 {
+				margin-bottom: 2rem;
+			}
+		}
 	}
 
 	&__half-box {
-		max-width: 650px;
+		width: 50%;
 
 		&:nth-child(1) {
 			padding-right: 1.75rem;
@@ -29,6 +40,9 @@
 
 		&:nth-child(2) {
 			padding-right: 1.75rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		& p {
@@ -36,5 +50,20 @@
 				margin-bottom: 1.75rem;
 			}
 		}
+	}
+
+	&__table {
+		margin: 0rem auto 0rem;
+	}
+
+	&__table,
+	&__table tr,
+	&__table td {
+		border: 2px solid $black;
+		width: 550px;
+	}
+
+	&__table td {
+		padding: 10px;
 	}
 }

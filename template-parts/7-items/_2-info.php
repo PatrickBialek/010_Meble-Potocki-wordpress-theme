@@ -5,26 +5,41 @@
 				<?php the_field( 'items_item_description' ); ?>
 			</div>
 			<div class="info__half-box">
-				<?php the_field( 'items_item_image' ); ?>
+				<?php $image = get_field( 'items_item_image' ); ?>
+				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 			</div>
 		</div>
 		<div class="info__full-box">
-			<table>
+			<?php if ( have_rows( 'item_table' ) ):
+				while( have_rows( 'item_table' ) ): the_row();
+			
+				?>
+
+			<h2 class="sub-heading sub-heading--black">Wymiary</h2>
+
+			<table class="info__table">
 				<tbody>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
+
+					<?php if (have_rows( 'item_table_row') ):
+						while( have_rows( 'item_table_row') ): the_row();
+
+						$text_1 = get_sub_field( 'item_table_text_1' );
+						$text_2 = get_sub_field( 'item_table_text_2' );
+
+						?>
+
+						<tr>
+							<td><?php echo $text_1 ?></td>
+							<td><?php echo $text_2 ?></td>
+						</tr>
+
+					<?php endwhile; endif; ?>
+
 				</tbody>
 			</table>
+
+		<?php endwhile; endif; ?>
+
 		</div>
 	</div>
 </section>

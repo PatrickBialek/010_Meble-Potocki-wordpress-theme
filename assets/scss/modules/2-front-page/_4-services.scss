@@ -96,5 +96,10 @@
 		color: $white;
 		opacity: 0;
 		transition: opacity .25s ease-in-out;
+
+		& span {
+			font-size: 2rem;
+			font-weight: bold;
+		}
 	}
 }
