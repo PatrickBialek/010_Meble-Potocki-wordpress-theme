@@ -346,8 +346,7 @@ body > * {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: aqua; }
+  align-items: center; }
 
 .carousel {
   box-sizing: border-box;
@@ -542,7 +541,10 @@ body > * {
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding: 0px 10px; }
+    .services__image-box img {
+      width: 100%; }
   .services__image-box:hover .services__hover-info {
     opacity: 1; }
   .services__hover-info {
@@ -591,6 +593,9 @@ body > * {
       .company-info__1-of-2 {
         width: 100%;
         text-align: center; } }
+    .company-info__1-of-2 img {
+      width: 321px;
+      margin: 0 auto; }
   .company-info__text {
     text-align: left;
     line-height: 1.5; }
@@ -923,4 +928,7 @@ body > * {
       border: 1px solid #dedede;
       width: 300px;
       height: 300px;
-      margin: 1rem; }
+      margin: 1rem;
+      padding: 0 10px; }
+    .gallery-item__pictures-container img {
+      width: 100%; }
