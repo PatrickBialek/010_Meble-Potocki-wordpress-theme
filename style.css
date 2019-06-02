@@ -859,23 +859,42 @@ body > * {
 .info {
   padding: 6rem 2rem 2rem;
   justify-content: center; }
+  @media (max-width: 900px) {
+    .info {
+      padding: 4rem 2.5rem; } }
   .info, .info__content, .info__full-box {
     display: flex; }
   .info__content {
     width: 1300px;
     flex-direction: column; }
+    @media (max-width: 900px) {
+      .info__content {
+        width: 100%; } }
   .info__full-box, .info__half-box {
     box-sizing: border-box; }
+  @media (max-width: 900px) {
+    .info__full-box {
+      flex-direction: column; } }
   .info__full-box:last-child {
     flex-direction: column;
     text-align: center;
     padding-top: 5rem; }
     .info__full-box:last-child h2 {
       margin-bottom: 2rem; }
+  @media (max-width: 550px) {
+    .info__full-box img {
+      width: 100%; } }
   .info__half-box {
     width: 50%; }
+    @media (max-width: 900px) {
+      .info__half-box {
+        width: 100%; } }
     .info__half-box:nth-child(1) {
       padding-right: 1.75rem; }
+      @media (max-width: 900px) {
+        .info__half-box:nth-child(1) {
+          padding: 0;
+          margin-bottom: 4rem; } }
     .info__half-box:nth-child(2) {
       padding-right: 1.75rem;
       display: flex;
@@ -885,13 +904,21 @@ body > * {
       margin-bottom: 1.75rem; }
   .info__table {
     margin: 0rem auto 0rem; }
-  .info__table,
+  .info__table {
+    border: 2px solid #242829;
+    width: 550px; }
+    @media (max-width: 550px) {
+      .info__table {
+        width: 100%; } }
   .info__table tr,
   .info__table td {
     border: 2px solid #242829;
     width: 550px; }
   .info__table td {
     padding: 10px; }
+    @media (max-width: 550px) {
+      .info__table td {
+        padding: 8px; } }
 
 .gallery-item {
   padding: 6rem 2rem;
@@ -917,5 +944,13 @@ body > * {
       height: 300px;
       margin: 1rem;
       padding: 0 10px; }
+      @media (max-width: 550px) {
+        .gallery-item__pictures-container li {
+          width: 100%;
+          height: auto;
+          padding: 20px; } }
     .gallery-item__pictures-container img {
       width: 100%; }
+      @media (max-width: 550px) {
+        .gallery-item__pictures-container img {
+          object-fit: cover; } }
