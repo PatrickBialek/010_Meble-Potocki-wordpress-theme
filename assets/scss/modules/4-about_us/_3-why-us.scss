@@ -10,15 +10,14 @@
 		box-sizing: border-box;
 	}
 
-	&__content {
-		max-width: 1300px;
+	&__content,
+	&__tiles-content {
 		flex-direction: column;
-		text-align: center;
 	}
 
-	&__tiles-content {
-		display: flex;
-		flex-direction: column;
+	&__content {
+		max-width: 1300px;
+		text-align: center;
 	}
 
 	&__tiles-row {
@@ -64,7 +63,6 @@
 
 	&__icon-box {
 		width: 100px;
-		height: 100%;
 		background-color: $dark-grey;
 		display: flex;
 		justify-content: center;

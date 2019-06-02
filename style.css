@@ -617,13 +617,11 @@ body > * {
     width: 100%;
     display: flex;
     box-sizing: border-box; }
+  .why-us__content, .why-us__tiles-content {
+    flex-direction: column; }
   .why-us__content {
     max-width: 1300px;
-    flex-direction: column;
     text-align: center; }
-  .why-us__tiles-content {
-    display: flex;
-    flex-direction: column; }
   .why-us__tiles-row {
     display: flex;
     margin: 1rem 0rem; }
@@ -655,7 +653,6 @@ body > * {
         margin-left: auto; } }
   .why-us__icon-box {
     width: 100px;
-    height: 100%;
     background-color: #373737;
     display: flex;
     justify-content: center;
