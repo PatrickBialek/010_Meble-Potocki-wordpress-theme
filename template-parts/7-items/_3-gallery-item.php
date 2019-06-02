@@ -8,7 +8,7 @@
 
 		<h2 class="heading heading--black"><?php the_field( 'item_title' ) ?> - Galeria</h2>
 
-		<div class="gallery-item__pictures-container" id="light-gallery">
+		<div class="gallery-item__pictures-container" id="light-gallery-container">
 			<ul>
 
 			<?php if ( have_rows( 'gallery_single_picture' ) ):

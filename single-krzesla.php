@@ -10,6 +10,7 @@ include get_template_directory() . "/template-parts/7-items/_2-info.php";
 
 include get_template_directory() . "/template-parts/7-items/_3-gallery-item.php";
 
+include get_template_directory() . "/template-parts/7-items/_4-video.php";
 
 ?>
 

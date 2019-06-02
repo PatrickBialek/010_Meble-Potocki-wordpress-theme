@@ -64,7 +64,7 @@
 		@include smallScreen {
 			position: fixed;
 			z-index: 5;
-			background-color: #fff;
+			background-color: $white;
 			height: 100vh;
 			width: 100%;
 			top: 89px;
