@@ -4,9 +4,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
 	background-position: center;
 	flex-direction: column;
+
+	&,
+	&__content {
+		text-align: center;
+	}
 
 	@include smallScreen {
 		padding: 5rem 2rem;
@@ -15,7 +19,6 @@
 	&__content {
 		width: 100%;
 		max-width: 1300px;
-		text-align: center;
 		margin: 0 auto;
 	}
 }

@@ -1,37 +1,38 @@
-.main-slider {
-	display: flex;
+.main-slider,
+#carousel-container,
+.carousel,
+.flickity-page-dots,
+.carousel__cell {
 	justify-content: center;
 	align-items: center;
+	display: flex;
+}
+
+.main-slider,
+.carousel,
+.carousel__cell {
 	flex-direction: column;
+}
+
+.main-slider {
 	height: 100vh;
 }
 
 #carousel-container {
 	height: 100%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .carousel {
 	box-sizing: border-box;
 	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	outline: none;
-	flex-direction: column;
 
 	&__cell {
 		text-align: center;
 		height: 100% !important;
 		border-radius: 5px;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 
 		& .heading-primary,
 		& .heading-secondary {
@@ -109,9 +110,6 @@
 
 .flickity-page-dots {
 	width: 80%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: absolute;
 	bottom: 20px;
 

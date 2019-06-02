@@ -3,7 +3,8 @@
 	justify-content: center;
 
 	&,
-	&__content {
+	&__content,
+	&__full-box {
 		display: flex;
 	}
 
@@ -18,8 +19,6 @@
 	}
 
 	&__full-box {
-		display: flex;
-
 		&:last-child {
 			flex-direction: column;
 			text-align: center;
