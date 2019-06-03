@@ -22,7 +22,7 @@ $query = new WP_Query([
 
 			<?php } ?>
 
-			<a href="#">Wszystkie krzesła</a> 
+			<a href="<?php echo site_url( '/krzesla/' ); ?>">Wszystkie krzesła</a> 
 		</div>
 	</div>
 </section>
