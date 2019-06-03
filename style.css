@@ -969,21 +969,21 @@ body > * {
     height: 100%;
     max-width: 650px; }
 
-.tables {
+.items {
   margin-bottom: 4rem; }
   @media (max-width: 900px) {
-    .tables {
+    .items {
       margin-bottom: 2rem; } }
-  .tables, .tables__content {
+  .items, .items__content {
     display: flex;
     justify-content: center;
     padding: 0 2rem; }
-  .tables__content {
+  .items__content {
     width: 100%;
     max-width: 1400px;
     flex-direction: column;
     align-items: center; }
-  .tables a {
+  .items a {
     text-decoration: none;
     background-color: #9d7f65;
     color: #fff;
@@ -994,3 +994,5 @@ body > * {
     margin: 2rem auto 0;
     transition: background-color .2s ease-in-out;
     cursor: pointer; }
+    .items a:hover {
+      background-color: #242829; }
