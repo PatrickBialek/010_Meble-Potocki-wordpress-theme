@@ -968,3 +968,29 @@ body > * {
     width: 100%;
     height: 100%;
     max-width: 650px; }
+
+.tables {
+  margin-bottom: 4rem; }
+  @media (max-width: 900px) {
+    .tables {
+      margin-bottom: 2rem; } }
+  .tables, .tables__content {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem; }
+  .tables__content {
+    width: 100%;
+    max-width: 1400px;
+    flex-direction: column;
+    align-items: center; }
+  .tables a {
+    text-decoration: none;
+    background-color: #9d7f65;
+    color: #fff;
+    padding: 12px 24px;
+    display: block;
+    text-align: center;
+    width: 120px;
+    margin: 2rem auto 0;
+    transition: background-color .2s ease-in-out;
+    cursor: pointer; }
