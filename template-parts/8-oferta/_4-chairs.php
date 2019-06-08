@@ -1,28 +1,29 @@
-<?php 
-
-$query = new WP_Query([
-	'post_type' => 'krzesla',
-	'posts_per_page' => 4
-]);
-
-?>
-
 <section class="items">
 	<div class="items__content">
-		<h1 class="heading heading--black">Krzesła</h1>
 
-		<div class="items__items-box">
+	<?php if( have_rows( 'offer_chairs' ) ): 
+		while( have_rows( 'offer_chairs' ) ): the_row(); 
 
-			<?php 
+		$chairs_heading = get_sub_field( 'offer_chairs_title' );
+		$chairs_textarea =  get_sub_field( 'offer_chairs_textarea' );
+		$chairs_image = get_sub_field( 'offer_chairs_image' );
 
-			while($query->have_posts() ) {
-				$query->the_post(); ?>
+		?>
 
-				<li><?php echo the_title(); ?></li>
+		<div class="items__row">
+			<div class="items__1-of-2">
+				<img src="<?php echo $tables_image['url']; ?>" alt="<?php echo $chairs_image['alt']; ?>" />
+			</div>
+			<div class="items__1-of-2">
+				<h1 class="heading heading--black"><?php echo $chairs_heading ?></h1>
+				<div class="company-info__text"><?php echo $chairs_textarea ?></div>
+			</div>
+		</div>
 
-			<?php } ?>
-
+		<div class="items__row">
 			<a href="<?php echo site_url( '/krzesla/' ); ?>">Wszystkie krzesła</a> 
 		</div>
+
+	<?php endwhile; endif; ?>
 	</div>
 </section>

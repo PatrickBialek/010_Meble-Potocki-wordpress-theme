@@ -239,18 +239,13 @@ body > * {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; }
+    @media (max-width: 900px) {
+      .carousel__small-cell {
+        width: 100%; } }
     .carousel__small-cell .heading-primary {
       font-size: 1.6rem;
       font-weight: 700;
       display: block; }
-      @media (max-width: 900px) {
-        .carousel__small-cell .heading-primary {
-          font-size: 3.5rem;
-          margin-bottom: 1rem; } }
-      @media (max-width: 550px) {
-        .carousel__small-cell .heading-primary {
-          font-size: 3.5rem;
-          margin-bottom: .75rem; } }
   .carousel__cell {
     height: 100% !important;
     border-radius: 5px;
@@ -307,9 +302,10 @@ body > * {
   border: none;
   outline: none;
   padding-top: 4px; }
-  @media (max-width: 900px) {
-    .flickity-button {
-      display: none; } }
+
+@media (max-width: 900px) {
+  #main-slider-container .flickity-button {
+    display: none; } }
 
 .previous {
   position: absolute;
