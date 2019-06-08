@@ -20,6 +20,22 @@
 			</div>
 		</div>
 
+		<?php if(have_rows( 'offer_chairs_gallery') ):
+			while( have_rows( 'offer_chairs_gallery') ): the_row(); ?>
+
+				<div class="items__row">
+
+				<?php if( have_rows( 'offer_single_chair') ):
+					while( have_rows( 'offer_single_chair') ): the_row(); ?>
+
+					<div class="items__single-item"></div>
+			
+				<?php endwhile; endif; ?>
+			
+				</div>
+			
+			<?php  endwhile; endif; ?>
+
 		<div class="items__row">
 			<a href="<?php echo site_url( '/krzesla/' ); ?>">Wszystkie krzesła</a> 
 		</div>

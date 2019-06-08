@@ -20,6 +20,22 @@
 			</div>
 		</div>
 
+		<?php if(have_rows( 'offer_cupboards_gallery') ):
+			while( have_rows( 'offer_cupboards_gallery') ): the_row(); ?>
+
+				<div class="items__row">
+
+				<?php if( have_rows( 'offer_single_cupboard') ):
+					while( have_rows( 'offer_single_cupboard') ): the_row(); ?>
+
+					<div class="items__single-item"></div>
+			
+				<?php endwhile; endif; ?>
+			
+				</div>
+			
+			<?php  endwhile; endif; ?>
+
 		<div class="items__row">
 			<a href="<?php echo site_url( '/lawy/' ); ?>">Wszystkie ławy</a> 
 		</div>
