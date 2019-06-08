@@ -18,7 +18,6 @@ if (elm2) {
 		contain: true,
 		wrapAround: true,
 		autoPlay: true,
-		autoPlay: 2000,
-		pageDots: false
+		autoPlay: 2000
 	});
 }

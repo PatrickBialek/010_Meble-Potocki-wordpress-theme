@@ -116,7 +116,7 @@ eval("const navElements = Array.from(document.querySelectorAll('.header__nav ul 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const Flickity = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\nconst elm = document.querySelector(\"#carousel-container\");\nconst elm2 = document.querySelector(\"#products-carousel-container\");\n\nif (elm) {\n\tconst flkty = new Flickity(elm, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000\n\t});\n}\n\nif (elm2) {\n\tconst flkty2 = new Flickity(elm2, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000,\n\t\tpageDots: false\n\t});\n}\n\n//# sourceURL=webpack:///./assets/js/modules/2-slider.js?");
+eval("const Flickity = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\nconst elm = document.querySelector(\"#carousel-container\");\nconst elm2 = document.querySelector(\"#products-carousel-container\");\n\nif (elm) {\n\tconst flkty = new Flickity(elm, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000\n\t});\n}\n\nif (elm2) {\n\tconst flkty2 = new Flickity(elm2, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000,\n\t\t//pageDots: false\n\t});\n}\n\n//# sourceURL=webpack:///./assets/js/modules/2-slider.js?");
 
 /***/ }),
 
