@@ -6,6 +6,14 @@
 
 ;
 
+@mixin touchScreen {
+	@media (max-width: 1200px) {
+		@content
+	}
+}
+
+;
+
 @mixin smallScreen {
 	@media (max-width: 900px) {
 		@content

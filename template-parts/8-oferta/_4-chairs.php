@@ -23,12 +23,26 @@
 		<?php if(have_rows( 'offer_chairs_gallery') ):
 			while( have_rows( 'offer_chairs_gallery') ): the_row(); ?>
 
-				<div class="items__row">
+				<div class="items__row margin-top-huge">
 
 				<?php if( have_rows( 'offer_single_chair') ):
-					while( have_rows( 'offer_single_chair') ): the_row(); ?>
+					while( have_rows( 'offer_single_chair') ): the_row(); 
+					
+					$chair_heading = get_sub_field( 'offer_single_chair_name' );
+					$chair_link = get_sub_field( 'offer_single_chair_link' );
+					$chair_image = get_sub_field( 'offer_single_chair_image' );
+					
+					?>
 
-					<div class="items__single-item"></div>
+					<div class="items__single-item">
+						<div class="items__item-image-box">
+							<img class="items__item-image" src="<?php echo $chair_image['url']; ?>" alt="<?php echo $chair_image['alt']; ?>">
+						</div>
+						<div class="items__item-info">
+							<span><?php echo $chair_heading ?></span>
+							<a class="items__item-link" src="<?php echo $chair_link?>">Zobacz produkt</a>
+						</div>
+					</div>
 			
 				<?php endwhile; endif; ?>
 			

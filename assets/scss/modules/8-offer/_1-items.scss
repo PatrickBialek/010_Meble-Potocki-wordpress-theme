@@ -31,6 +31,7 @@
 
 	&__row {
 		margin-top: 3rem;
+		align-items: center;
 
 		@include smallScreen {
 			flex-direction: column-reverse;
@@ -67,7 +68,8 @@
 		}
 
 		& img {
-			width: 321px;
+			width: 100%;
+			max-width: 321px;
 			margin: 0 auto;
 
 			@include smallScreen {
@@ -83,10 +85,17 @@
 	&__single-item {
 		width: 275px;
 		border: 1px solid $border-color;
-		margin: 0rem 1rem;
+		margin: 0rem 2.25rem;
+
+		@include normalDesktop {
+			margin: 0 1rem;
+			width: 200px;
+		}
 
 		@include smallScreen {
 			margin-bottom: 2rem;
+			width: 100%;
+			max-width: 400px;
 		}
 	}
 

@@ -11,9 +11,9 @@
 }
 
 .margin-top-huge {
-	margin-top: 6rem !important;
+	margin-top: 8rem !important;
 
 	@include smallScreen {
-		margin-top: 4rem;
+		margin-top: 2rem;
 	}
 }

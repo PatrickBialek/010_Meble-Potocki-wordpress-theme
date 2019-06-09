@@ -205,10 +205,10 @@ body > * {
   margin-bottom: 2rem; }
 
 .margin-top-huge {
-  margin-top: 6rem !important; }
+  margin-top: 8rem !important; }
   @media (max-width: 900px) {
     .margin-top-huge {
-      margin-top: 4rem; } }
+      margin-top: 2rem; } }
 
 .btn {
   text-decoration: none;
@@ -600,7 +600,8 @@ body > * {
         width: 100%;
         text-align: center; } }
     .company-info__1-of-2 img {
-      width: 321px;
+      width: 100%;
+      max-width: 321px;
       margin: 0 auto; }
   .company-info__text {
     text-align: left;
@@ -1006,7 +1007,8 @@ body > * {
         width: 100%;
         padding: 0rem; } }
   .items__row {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    align-items: center; }
     @media (max-width: 900px) {
       .items__row {
         flex-direction: column-reverse; } }
@@ -1032,7 +1034,8 @@ body > * {
         .items__1-of-2--second {
           order: 1; } }
     .items__1-of-2 img {
-      width: 321px;
+      width: 100%;
+      max-width: 321px;
       margin: 0 auto; }
       @media (max-width: 900px) {
         .items__1-of-2 img {
@@ -1043,10 +1046,16 @@ body > * {
   .items__single-item {
     width: 275px;
     border: 1px solid #dedede;
-    margin: 0rem 1rem; }
+    margin: 0rem 2.25rem; }
+    @media (max-width: 1400px) {
+      .items__single-item {
+        margin: 0 1rem;
+        width: 200px; } }
     @media (max-width: 900px) {
       .items__single-item {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 400px; } }
   .items__item-image-box {
     box-sizing: border-box;
     padding: 20px 10px; }
