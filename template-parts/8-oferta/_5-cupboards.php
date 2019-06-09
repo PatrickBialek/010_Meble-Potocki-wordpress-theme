@@ -40,7 +40,7 @@
 							</div>
 							<div class="items__item-info">
 								<span><?php echo $cupboard_heading ?></span>
-								<a class="items__item-link" src="<?php echo $cupboard_link?>">Zobacz produkt</a>
+								<a class="items__item-link" href="<?php echo site_url( $cupboard_link ); ?>">Zobacz produkt</a>
 							</div>
 						</div>
 			
