@@ -1,6 +1,10 @@
 .items {
 	margin-bottom: 4rem;
 
+	&--top-margin {
+		margin-top: 4rem;
+	}
+
 	@include smallScreen {
 		margin-bottom: 2rem;
 	}
