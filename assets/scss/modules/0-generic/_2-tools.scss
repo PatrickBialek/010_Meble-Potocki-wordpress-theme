@@ -9,3 +9,11 @@
 .margin-bottom-big {
 	margin-bottom: 2rem;
 }
+
+.margin-top-huge {
+	margin-top: 6rem !important;
+
+	@include smallScreen {
+		margin-top: 4rem;
+	}
+}

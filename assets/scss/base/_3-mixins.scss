@@ -1,3 +1,11 @@
+@mixin normalDesktop {
+	@media (max-width: 1400px) {
+		@content
+	}
+}
+
+;
+
 @mixin smallScreen {
 	@media (max-width: 900px) {
 		@content

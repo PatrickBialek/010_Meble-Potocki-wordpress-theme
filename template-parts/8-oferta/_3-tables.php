@@ -10,7 +10,7 @@
 
 		?>
 
-		<div class="items__row">
+		<div class="items__row margin-bottom-medium">
 			<div class="items__1-of-2">
 				<img src="<?php echo $tables_image['url']; ?>" alt="<?php echo $tables_image['alt']; ?>" />
 			</div>
@@ -23,12 +23,26 @@
 		<?php if(have_rows( 'offer_tables_gallery') ):
 			while( have_rows( 'offer_tables_gallery') ): the_row(); ?>
 
-				<div class="items__row">
+				<div class="items__row margin-top-huge">
 
 				<?php if( have_rows( 'offer_single_table') ):
-					while( have_rows( 'offer_single_table') ): the_row(); ?>
+					while( have_rows( 'offer_single_table') ): the_row(); 
+					
+					$table_heading = get_sub_field( 'offer_single_table_name' );
+					$table_link = get_sub_field( 'offer_single_table_link' );
+					$table_image = get_sub_field( 'offer_single_table_image' );
+					
+					?>
 
-					<div class="items__single-item"></div>
+					<div class="items__single-item">
+						<div class="items__item-image-box">
+							<img class="items__item-image" src="<?php echo $table_image['url']; ?>" alt="<?php echo $table_image['alt']; ?>">
+						</div>
+						<div class="items__item-info">
+							<span><?php echo $table_heading ?></span>
+							<a class="items__item-link" src="<?php echo $table_link?>">Zobacz produkt</a>
+						</div>
+					</div>
 			
 				<?php endwhile; endif; ?>
 			

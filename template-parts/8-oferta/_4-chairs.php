@@ -11,10 +11,10 @@
 		?>
 
 		<div class="items__row">
-			<div class="items__1-of-2">
+			<div class="items__1-of-2 items__1-of-2--second">
 				<img src="<?php echo $tables_image['url']; ?>" alt="<?php echo $chairs_image['alt']; ?>" />
 			</div>
-			<div class="items__1-of-2">
+			<div class="items__1-of-2 items__1-of-2--first">
 				<h1 class="heading heading--black"><?php echo $chairs_heading ?></h1>
 				<div class="company-info__text"><?php echo $chairs_textarea ?></div>
 			</div>
