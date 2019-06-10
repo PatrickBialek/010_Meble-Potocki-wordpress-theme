@@ -1,17 +1,29 @@
 <section class="items items--top-margin">
+	<div class="items__content">
+		<div class="items__gallery-wrap-box">
 
-<?php 
+		<?php 
 
-$query = new WP_Query([
-	"post_type" => "stoly",
-	"post_per_page" => -1
-]);
+		$query = new WP_Query([
+			"post_type" => "stoly",
+			"post_per_page" => -1
+		]);
 
-while( $query->have_posts() ) {
-	$query->the_post(); ?>
+		while( $query->have_posts() ) {
+			$query->the_post(); ?>
 
-	<h2><?php the_title(); ?></h2>
+			<div class="items__single-item">
+				<div class="items__item-image-box">
+					<img class="items__item-image" src="" alt="">
+				</div>
+				<div class="items__item-info">
+					<span><?php the_title(); ?></span>
+					<a class="items__item-link" href="">Zobacz produkt</a>
+				</div>
+			</div>
 
-<?php } ?>
+		<?php } ?>
 
+		</div>
+	</div>
 </section>
