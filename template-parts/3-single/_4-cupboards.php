@@ -18,7 +18,7 @@
 				</div>
 				<div class="items__item-info">
 					<span><?php the_title(); ?></span>
-					<a class="items__item-link" href="">Zobacz produkt</a>
+					<a class="items__item-link" href="<?php the_permalink(); ?>">Zobacz produkt</a>
 				</div>
 			</div>
 
