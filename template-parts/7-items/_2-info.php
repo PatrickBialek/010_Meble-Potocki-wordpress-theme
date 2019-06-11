@@ -13,9 +13,11 @@
 			<?php if ( have_rows( 'item_table' ) ):
 				while( have_rows( 'item_table' ) ): the_row();
 			
-				?>
-
-			<h2 class="sub-heading sub-heading--black">Wymiary</h2>
+				if( get_sub_field( 'item_table_show' ) ): ?>
+	
+					<h2 class="sub-heading sub-heading--black">Wymiary</h2>
+				
+				<?php endif; ?>
 
 			<table class="info__table">
 				<tbody>
