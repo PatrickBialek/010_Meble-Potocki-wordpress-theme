@@ -247,7 +247,7 @@ body > * {
     align-items: center; }
     @media (max-width: 900px) {
       .carousel__small-cell {
-        width: 100%; } }
+        width: calc(100% -50px); } }
     .carousel__small-cell .heading-primary {
       font-size: 1.6rem;
       font-weight: 700;

@@ -13,7 +13,7 @@
 			<?php if ( have_rows( 'item_table' ) ):
 				while( have_rows( 'item_table' ) ): the_row();
 			
-				if( get_sub_field( 'item_table_show' ) ): ?>
+				if( get_field( 'item_table_show' ) ): ?>
 					<h2 class="sub-heading sub-heading--black">Wymiary</h2>
 				<?php endif; ?>
 
@@ -38,7 +38,7 @@
 				</tbody>
 			</table>
 
-			<?php if( get_sub_field( 'item_show_possibility_to_resize' ) ) : ?>
+			<?php if( get_field( 'item_show_possibility_to_resize' ) ) : ?>
 				<span>*Możliwość dopasowania wymiaru wg życzenia klienta</span>
 			<?php endif;
 

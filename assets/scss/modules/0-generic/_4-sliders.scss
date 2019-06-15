@@ -26,7 +26,8 @@
 		align-items: center;
 
 		@include smallScreen {
-			width: 100%;
+			width: calc(100% -50px);
+			//max-width: 350px;
 		}
 
 		& .heading-primary {
