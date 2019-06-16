@@ -14,6 +14,7 @@
 
 			<div class="items__single-item">
 				<div class="items__item-image-box">
+					<span><?php echo get_the_post_thumbnail(); ?></span>
 					<img class="items__item-image" src="" alt="">
 				</div>
 				<div class="items__item-info">
