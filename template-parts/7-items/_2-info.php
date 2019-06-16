@@ -13,9 +13,9 @@
 
 		<div class="info__full-box">
 			<?php if( get_field( 'item_table_show' ) ):
-			
+
 				if ( have_rows( 'item_table' ) ):
-					while( have_rows( 'item_table' ) ): the_row();?>
+					while( have_rows( 'item_table' ) ): the_row(); ?>
 				
 				<h2 class="sub-heading sub-heading--black">Wymiary</h2>
 

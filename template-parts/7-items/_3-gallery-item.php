@@ -4,9 +4,7 @@
 	<?php if( get_field( 'item_gallery_show' ) ):
 	
 		if ( have_rows( 'gallery' ) ):
-			while( have_rows( 'gallery' ) ): the_row();
-			
-			?>
+			while( have_rows( 'gallery' ) ): the_row(); ?>
 
 			<h2 class="heading heading--black"><?php the_field( 'item_title' ) ?> - Galeria</h2>
 
