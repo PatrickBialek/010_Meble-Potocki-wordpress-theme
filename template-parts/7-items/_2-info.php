@@ -1,5 +1,6 @@
 <section class="info">
 	<div class="info__content">
+
 		<div class="info__full-box">
 			<div class="info__half-box">
 				<?php the_field( 'items_item_description' ); ?>
@@ -9,8 +10,10 @@
 				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 			</div>
 		</div>
+
 		<div class="info__full-box">
 			<?php if( get_field( 'item_table_show' ) ):
+			
 				if ( have_rows( 'item_table' ) ):
 					while( have_rows( 'item_table' ) ): the_row();?>
 				
