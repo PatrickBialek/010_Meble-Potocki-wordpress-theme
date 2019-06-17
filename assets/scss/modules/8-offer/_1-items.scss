@@ -86,6 +86,12 @@
 		}
 	}
 
+	&__gallery-wrap-box {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
 	&__single-item {
 		width: 275px;
 		border: 1px solid $border-color;
@@ -100,6 +106,19 @@
 			margin-bottom: 2rem;
 			width: 100%;
 			max-width: 400px;
+		}
+
+		&--page-item-theme {
+			margin: 1.25rem;
+
+			@include normalDesktop {
+				margin: 1.25rem;
+				width: 275px;
+			}
+
+			& img {
+				width: 100%;
+			}
 		}
 	}
 

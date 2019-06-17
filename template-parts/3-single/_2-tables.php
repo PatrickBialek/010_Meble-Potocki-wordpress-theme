@@ -12,12 +12,13 @@
 		while( $query->have_posts() ) {
 			$query->the_post(); ?>
 
-			<div class="items__single-item">
+			<div class="items__single-item items__single-item--page-item-theme">
 				<div class="items__item-image-box">
-					<img class="items__item-image" src="" alt="">
+					<?php echo get_the_post_thumbnail(); ?>
 				</div>
 				<div class="items__item-info">
 					<span><?php the_title(); ?></span>
+					<p><?php the_excerpt(); ?></p>
 					<a class="items__item-link" href="<?php echo the_permalink(); ?>">Zobacz produkt</a>
 				</div>
 			</div>

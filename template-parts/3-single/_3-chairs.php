@@ -14,11 +14,11 @@
 
 			<div class="items__single-item">
 				<div class="items__item-image-box">
-					<span><?php echo get_the_post_thumbnail(); ?></span>
-					<img class="items__item-image" src="" alt="">
+					<?php echo get_the_post_thumbnail(); ?> 
 				</div>
 				<div class="items__item-info">
 					<span><?php the_title(); ?></span>
+					<p><?php the_excerpt(); ?></p>
 					<a class="items__item-link" href="<?php echo the_permalink(); ?>">Zobacz produkt</a>
 				</div>
 			</div>
