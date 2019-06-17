@@ -146,6 +146,11 @@
 		& span {
 			display: block;
 		}
+
+		& p {
+			font-weight: normal !important;
+			font-size: 1.6rem;
+		}
 	}
 
 	& &__item-link {

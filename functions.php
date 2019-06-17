@@ -31,7 +31,7 @@ function chair_post_type() {
       'edit_item' => 'Edytuj krzesło',
       'all_items' => 'Wszystkie krzesła'
     ],
-    'supports' => ['title', 'custom-fields', 'page-attributes', 'thumbnail' ], 
+    'supports' => ['title', 'custom-fields', 'page-attributes', 'thumbnail', 'editor' ], 
     'menu_icon' => 'dashicons-cart'
   ]);
 }
@@ -45,7 +45,7 @@ function table_post_type() {
       'edit_item' => 'Edytuj stół',
       'all_items' => 'Wszystkie krzesła'
     ],
-    'supports' => ['title', 'custom-fields', 'page-attributes', 'thumbnail' ], 
+    'supports' => ['title', 'custom-fields', 'page-attributes', 'thumbnail', 'editor' ], 
     'menu_icon' => 'dashicons-cart'
   ]);
 }
@@ -59,7 +59,7 @@ function cupboard_post_type() {
       'edit_item' => 'Edytuj ławę',
       'all_items' => 'Wszystkie krzesła'
     ],
-    'supports' => ['title', 'custom-fields', 'page-attributes', 'thumbnail' ], 
+    'supports' => ['title', 'custom-fields', 'page-attributes', 'thumbnail', 'editor' ], 
     'menu_icon' => 'dashicons-cart'
   ]);
 }

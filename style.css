@@ -1094,6 +1094,9 @@ main {
     text-align: center; }
     .items__item-info span {
       display: block; }
+    .items__item-info p {
+      font-weight: normal !important;
+      font-size: 1.6rem; }
   .items .items__item-link {
     font-size: 1.6rem;
     font-weight: 400;
