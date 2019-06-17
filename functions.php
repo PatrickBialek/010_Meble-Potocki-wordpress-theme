@@ -67,3 +67,5 @@ function cupboard_post_type() {
 add_action('init', 'chair_post_type');
 add_action('init', 'table_post_type');
 add_action('init', 'cupboard_post_type');
+
+add_theme_support( 'post-thumbnails' );

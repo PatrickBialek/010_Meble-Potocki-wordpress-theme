@@ -41,7 +41,7 @@
 				</table>
 
 				<?php if( get_field( 'item_show_possibility_to_resize' ) ) : ?>
-					<span>*Możliwość dopasowania wymiaru wg życzenia klienta</span>
+					<span class="info__can-be-adjusted">*Możliwość dopasowania wymiaru wg życzenia klienta</span>
 				<?php endif;
 
 			endwhile; endif;
