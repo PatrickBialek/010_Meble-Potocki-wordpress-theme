@@ -96,6 +96,8 @@
 		width: 275px;
 		border: 1px solid $border-color;
 		margin: 0rem 2.25rem;
+		display: flex;
+		flex-direction: column;
 
 		@include normalDesktop {
 			margin: 0 1rem;
@@ -136,12 +138,16 @@
 		font-weight: bold;
 		transition: opacity .3s ease-in-out;
 		width: 100%;
-		display: block;
-		padding: 12px;
+		height: 100%;
+		display: flex;
+		padding: 12px 12px 60px;
 		box-sizing: border-box;
 		background-color: $black;
 		color: $white;
+		flex-direction: column;
 		text-align: center;
+		position: relative;
+		align-items: center;
 
 		& span {
 			display: block;
@@ -162,6 +168,8 @@
 		margin-top: 1.5rem;
 		color: $white;
 		transition: background-color .3s ease-in-out, color .2s ease-in-out;
+		position: absolute;
+		bottom: 15px;
 
 		&:hover {
 			background-color: $white;
