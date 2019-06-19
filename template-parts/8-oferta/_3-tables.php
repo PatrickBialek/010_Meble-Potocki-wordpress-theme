@@ -31,6 +31,7 @@
 					$table_heading = get_sub_field( 'offer_single_table_name' );
 					$table_link = get_sub_field( 'offer_single_table_link' );
 					$table_image = get_sub_field( 'offer_single_table_image' );
+					$description = get_sub_field( 'description' );
 					
 					?>
 
@@ -39,7 +40,8 @@
 							<img class="items__item-image" src="<?php echo $table_image['url']; ?>" alt="<?php echo $table_image['alt']; ?>">
 						</div>
 						<div class="items__item-info">
-							<span><?php echo $table_heading ?></span>
+							<span class="margin-bottom-medium"><?php echo $table_heading ?></span>
+							<p><?php echo $description ?></p>
 							<a class="items__item-link" href="<?php echo site_url( $table_link ); ?>">Zobacz produkt</a>
 						</div>
 					</div>

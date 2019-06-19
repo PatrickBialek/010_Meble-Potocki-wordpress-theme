@@ -12,7 +12,7 @@
 		while( $query->have_posts() ) {
 			$query->the_post(); ?>
 
-			<div class="items__single-item">
+			<div class="items__single-item items__single-item--page-item-theme">
 				<div class="items__item-image-box">
 					<?php echo get_the_post_thumbnail(); ?> 
 				</div>

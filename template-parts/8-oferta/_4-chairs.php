@@ -31,6 +31,7 @@
 					$chair_heading = get_sub_field( 'offer_single_chair_name' );
 					$chair_link = get_sub_field( 'offer_single_chair_link' );
 					$chair_image = get_sub_field( 'offer_single_chair_image' );
+					$description = get_sub_field( 'description' );
 					
 					?>
 
@@ -39,7 +40,8 @@
 							<img class="items__item-image" src="<?php echo $chair_image['url']; ?>" alt="<?php echo $chair_image['alt']; ?>">
 						</div>
 						<div class="items__item-info">
-							<span><?php echo $chair_heading ?></span>
+							<span class="margin-bottom-medium"><?php echo $chair_heading ?></span>
+							<p><?php echo $description ?></p>
 							<a class="items__item-link" href="<?php echo site_url( $chair_link ); ?>">Zobacz produkt</a>
 						</div>
 					</div>
