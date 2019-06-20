@@ -959,22 +959,18 @@ main {
     .gallery-item__pictures-container li {
       display: flex;
       justify-content: center;
-      align-items: center;
       border: 1px solid #dedede;
       width: 300px;
-      height: 300px;
       margin: 1rem;
-      padding: 0 10px; }
+      overflow: hidden; }
       @media (max-width: 550px) {
         .gallery-item__pictures-container li {
           width: 100%;
           height: auto;
           padding: 20px; } }
-    .gallery-item__pictures-container img {
-      width: 100%; }
-      @media (max-width: 550px) {
-        .gallery-item__pictures-container img {
-          object-fit: cover; } }
+    @media (max-width: 550px) {
+      .gallery-item__pictures-container img {
+        object-fit: cover; } }
 
 .video-item {
   display: flex;
