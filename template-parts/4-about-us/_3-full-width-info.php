@@ -1,4 +1,4 @@
-<section class="full-width-info" style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/full-width-bg-1.jpg' ); ?>');">
+<section class="full-width-info" style="background-image: url('<?php echo get_theme_file_uri( 'assets/images/full-width-bg-4.jpg' ); ?>');">
 	<div class="full-width-info__content">
 
 	<?php if( have_rows( 'full_width_info' ) ): 
