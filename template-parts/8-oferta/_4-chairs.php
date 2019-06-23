@@ -12,7 +12,7 @@
 
 		<div class="items__row">
 			<div class="items__1-of-2 items__1-of-2--second">
-				<img src="<?php echo $tables_image['url']; ?>" alt="<?php echo $chairs_image['alt']; ?>" />
+				<img src="<?php echo $chairs_image['url']; ?>" alt="<?php echo $chairs_image['alt']; ?>" />
 			</div>
 			<div class="items__1-of-2 items__1-of-2--first">
 				<h1 class="heading heading--black"><?php echo $chairs_heading ?></h1>
