@@ -1011,7 +1011,7 @@ main {
         padding: 0rem; } }
   .items__row {
     margin-top: 3rem;
-    align-items: center; }
+    align-items: stretch; }
     @media (max-width: 900px) {
       .items__row {
         flex-direction: column-reverse; } }

@@ -35,7 +35,7 @@
 
 	&__row {
 		margin-top: 3rem;
-		align-items: center;
+		align-items: stretch;
 
 		@include smallScreen {
 			flex-direction: column-reverse;
