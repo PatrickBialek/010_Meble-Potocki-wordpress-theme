@@ -296,11 +296,9 @@ main {
   position: relative;
   width: 100%; }
 
-#products-carousel-container .flickity-viewport {
-  max-width: 1400px; }
-  #products-carousel-container .flickity-viewport .btn {
-    position: absolute;
-    bottom: 20px; }
+#products-carousel-container .flickity-viewport .btn {
+  position: absolute;
+  bottom: 20px; }
 
 .flickity-button {
   width: 44px;

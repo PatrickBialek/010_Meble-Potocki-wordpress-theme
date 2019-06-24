@@ -27,7 +27,6 @@
 
 		@include smallScreen {
 			width: calc(100% -50px);
-			//max-width: 350px;
 		}
 
 		& .heading-primary {
@@ -92,8 +91,6 @@
 }
 
 #products-carousel-container .flickity-viewport {
-	max-width: 1400px;
-
 	& .btn {
 		position: absolute;
 		bottom: 20px;
