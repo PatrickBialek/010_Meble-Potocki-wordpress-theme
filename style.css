@@ -1073,8 +1073,15 @@ main {
   .items__item-image-box {
     box-sizing: border-box;
     padding: 20px 10px; }
+    .items__item-image-box--chair {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
   .items__item-image {
     width: 100%; }
+    .items__item-image--chair {
+      max-width: 100%;
+      width: auto; }
   .items__item-info {
     font-size: 1.8rem;
     font-weight: bold;

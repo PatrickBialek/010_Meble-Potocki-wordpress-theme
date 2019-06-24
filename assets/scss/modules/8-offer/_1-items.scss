@@ -126,10 +126,21 @@
 	&__item-image-box {
 		box-sizing: border-box;
 		padding: 20px 10px;
+
+		&--chair {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	&__item-image {
 		width: 100%;
+
+		&--chair {
+			max-width: 100%;
+			width: auto;
+		}
 	}
 
 	&__item-info {

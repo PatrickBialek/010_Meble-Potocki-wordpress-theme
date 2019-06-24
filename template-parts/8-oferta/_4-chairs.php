@@ -36,8 +36,8 @@
 					?>
 
 					<div class="items__single-item">
-						<div class="items__item-image-box">
-							<img class="items__item-image" src="<?php echo $chair_image['url']; ?>" alt="<?php echo $chair_image['alt']; ?>">
+						<div class="items__item-image-box items__item-image-box--chair">
+							<img class="items__item-image items__item-image--chair" src="<?php echo $chair_image['url']; ?>" alt="<?php echo $chair_image['alt']; ?>">
 						</div>
 						<div class="items__item-info">
 							<span class="margin-bottom-medium"><?php echo $chair_heading ?></span>
