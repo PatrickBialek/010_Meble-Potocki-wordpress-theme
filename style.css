@@ -1077,6 +1077,8 @@ main {
       display: flex;
       align-items: center;
       justify-content: center; }
+    .items__item-image-box--not-100 img {
+      width: auto; }
   .items__item-image {
     width: 100%; }
     .items__item-image--chair {

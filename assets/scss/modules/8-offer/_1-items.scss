@@ -132,6 +132,12 @@
 			align-items: center;
 			justify-content: center;
 		}
+
+		&--not-100 {
+			& img {
+				width: auto;
+			}
+		}
 	}
 
 	&__item-image {

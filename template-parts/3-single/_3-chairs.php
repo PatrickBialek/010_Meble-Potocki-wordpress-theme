@@ -13,7 +13,7 @@
 			$query->the_post(); ?>
 
 			<div class="items__single-item items__single-item--page-item-theme">
-				<div class="items__item-image-box">
+				<div class="items__item-image-box items__item-image-box--chair items__item-image-box--not-100">
 					<?php echo get_the_post_thumbnail(); ?> 
 				</div>
 				<div class="items__item-info">
