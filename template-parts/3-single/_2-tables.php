@@ -26,5 +26,7 @@
 		<?php } ?>
 
 		</div>
+
+		<a class="btn btn--primary margin-bottom-big" href="<?php echo site_url( 'oferta' )?>">Wróć</a>
 	</div>
 </section>
