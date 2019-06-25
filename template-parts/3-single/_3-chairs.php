@@ -6,7 +6,7 @@
 
 		$query = new WP_Query([
 			"post_type" => "krzesla",
-			"post_per_page" => -1
+			"posts_per_page" => -1
 		]);
 
 		while( $query->have_posts() ) {
