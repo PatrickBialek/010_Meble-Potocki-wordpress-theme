@@ -251,6 +251,9 @@ main {
     @media (max-width: 900px) {
       .carousel__small-cell {
         width: calc(100% -50px); } }
+    @media (max-width: 550px) {
+      .carousel__small-cell {
+        width: 80%; } }
     .carousel__small-cell .heading-primary {
       font-size: 1.6rem;
       font-weight: 700;

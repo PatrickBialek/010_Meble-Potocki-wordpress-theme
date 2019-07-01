@@ -29,6 +29,10 @@
 			width: calc(100% -50px);
 		}
 
+		@include tinyScreen {
+			width: 80%;
+		}
+
 		& .heading-primary {
 			font-size: 1.6rem;
 			font-weight: 700;
