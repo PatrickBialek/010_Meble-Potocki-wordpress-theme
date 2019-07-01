@@ -1,0 +1,41 @@
+.additional-menu {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 0px;
+	background-color: $black;
+
+	@include tinyScreen {
+		padding: 20px;
+	}
+
+	&,
+	&__content-box,
+	&__nav-list {
+		display: flex;
+	}
+
+	&__content-box {
+		margin: 0 auto;
+		width: 80%;
+		padding: 0rem 1rem;
+	}
+
+	&__nav-list {
+		& li {
+			padding: 0px 15px;
+
+			& a {
+				color: $white;
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: bold;
+				transition: color .2s ease-in-out;
+
+				&:hover {
+					color: $gold;
+				}
+			}
+		}
+	}
+}

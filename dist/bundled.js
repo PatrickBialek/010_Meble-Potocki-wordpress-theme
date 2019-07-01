@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_1_hamburger_nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/1-hamburger-nav */ \"./assets/js/modules/1-hamburger-nav.js\");\n/* harmony import */ var _modules_1_hamburger_nav__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_1_hamburger_nav__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_2_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/2-slider */ \"./assets/js/modules/2-slider.js\");\n/* harmony import */ var _modules_2_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_2_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_3_select_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/3-select-products */ \"./assets/js/modules/3-select-products.js\");\n/* harmony import */ var _modules_3_select_products__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_3_select_products__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./assets/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_1_hamburger_nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/1-hamburger-nav */ \"./assets/js/modules/1-hamburger-nav.js\");\n/* harmony import */ var _modules_1_hamburger_nav__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_1_hamburger_nav__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_2_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/2-slider */ \"./assets/js/modules/2-slider.js\");\n/* harmony import */ var _modules_2_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_2_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_3_select_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/3-select-products */ \"./assets/js/modules/3-select-products.js\");\n/* harmony import */ var _modules_3_select_products__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_3_select_products__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _modules_4_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/4-scroll */ \"./assets/js/modules/4-scroll.js\");\n/* harmony import */ var _modules_4_scroll__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_4_scroll__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack:///./assets/js/app.js?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("const navElements = Array.from(document.querySelectorAll('.header__nav ul 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const Flickity = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\nconst elm = document.querySelector(\"#carousel-container\");\nconst elm2 = document.querySelector(\"#products-carousel-container\");\n\nif (elm) {\n\tconst flkty = new Flickity(elm, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000\n\t});\n}\n\nif (elm2) {\n\tconst flkty2 = new Flickity(elm2, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000,\n\t\t//pageDots: false\n\t});\n}\n\n//# sourceURL=webpack:///./assets/js/modules/2-slider.js?");
+eval("const Flickity = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\nconst elm = document.querySelector(\"#carousel-container\");\nconst elm2 = document.querySelector(\"#products-carousel-container\");\n\nif (elm) {\n\tconst flkty = new Flickity(elm, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000\n\t});\n}\n\nif (elm2) {\n\tconst flkty2 = new Flickity(elm2, {\n\t\tcellAlign: 'left',\n\t\tcontain: true,\n\t\twrapAround: true,\n\t\tautoPlay: true,\n\t\tautoPlay: 2000\n\t});\n}\n\n//# sourceURL=webpack:///./assets/js/modules/2-slider.js?");
 
 /***/ }),
 
@@ -128,6 +128,17 @@ eval("const Flickity = __webpack_require__(/*! flickity */ \"./node_modules/flic
 /***/ (function(module, exports) {
 
 eval("const btns = Array.from(document.querySelectorAll('.services__button'));\nconst galleryItems = Array.from(document.querySelectorAll('.services__image-box'));\n\nlet filters = [\"table\", \"cupboard\", \"chair\"];\n\nfunction filteringElements() {\n\tgalleryItems.forEach(galleryItem => {\n\t\tconst itemData = galleryItem.dataset.filter;\n\n\t\tif (filters.includes(itemData)) {\n\t\t\tgalleryItem.style.display = \"flex\";\n\t\t} else {\n\t\t\tgalleryItem.style.display = \"none\";\n\t\t}\n\t})\n}\n\nfunction selectItemFunction() {\n\tconst btn = event.target;\n\n\tif (btn.classList.contains('active')) {\n\t\tbtn.classList.remove('active');\n\n\t\tconst filter = btn.dataset.filter;\n\t\tconst index = filters.indexOf(filter);\n\n\t\tif (index > -1) {\n\t\t\tfilters.splice(index, 1);\n\t\t}\n\n\t\tfilteringElements(filters);\n\t} else {\n\t\tbtn.classList.add('active');\n\n\t\tconst filter = btn.dataset.filter;\n\t\tfilters.push(filter);\n\n\t\tfilteringElements(filters);\n\t}\n}\n\nbtns.forEach(btn => btn.addEventListener('click', selectItemFunction));\n\n//# sourceURL=webpack:///./assets/js/modules/3-select-products.js?");
+
+/***/ }),
+
+/***/ "./assets/js/modules/4-scroll.js":
+/*!***************************************!*\
+  !*** ./assets/js/modules/4-scroll.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./assets/js/modules/4-scroll.js?");
 
 /***/ }),
 

@@ -1,4 +1,4 @@
-<section class="items">
+<section class="items" id="tables">
 	<div class="items__content">
 
 	<?php if( have_rows( 'offer_tables' ) ): 

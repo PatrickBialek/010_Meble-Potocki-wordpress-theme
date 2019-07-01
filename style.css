@@ -1134,3 +1134,29 @@ main {
     cursor: pointer; }
     .items a:hover {
       background-color: #242829; }
+
+.additional-menu {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0px;
+  background-color: #242829; }
+  @media (max-width: 550px) {
+    .additional-menu {
+      padding: 20px; } }
+  .additional-menu, .additional-menu__content-box, .additional-menu__nav-list {
+    display: flex; }
+  .additional-menu__content-box {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0rem 1rem; }
+  .additional-menu__nav-list li {
+    padding: 0px 15px; }
+    .additional-menu__nav-list li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color .2s ease-in-out; }
+      .additional-menu__nav-list li a:hover {
+        color: #9d7f65; }
