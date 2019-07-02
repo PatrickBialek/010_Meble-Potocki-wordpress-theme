@@ -1,4 +1,4 @@
-<section class="items" id="chairs">
+<section class="items chairs-section" id="chairs">
 	<div class="items__content">
 
 	<?php if( have_rows( 'offer_chairs' ) ): 

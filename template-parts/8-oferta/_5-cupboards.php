@@ -1,4 +1,4 @@
-<section class="items" id="cupboards">
+<section class="items cupboards-section" id="cupboards">
 	<div class="items__content">
 
 	<?php if( have_rows( 'offer_cupboard' ) ): 
