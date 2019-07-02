@@ -1150,6 +1150,9 @@ main {
     margin: 0 auto;
     width: 80%;
     padding: 0rem 1rem; }
+    @media (max-width: 900px) {
+      .additional-menu__content-box {
+        justify-content: center; } }
   .additional-menu__nav-list li {
     padding: 0px 15px; }
     .additional-menu__nav-list li a {

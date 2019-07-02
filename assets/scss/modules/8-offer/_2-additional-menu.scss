@@ -19,6 +19,10 @@
 		margin: 0 auto;
 		width: 80%;
 		padding: 0rem 1rem;
+
+		@include smallScreen {
+			justify-content: center;
+		}
 	}
 
 	&__nav-list {
