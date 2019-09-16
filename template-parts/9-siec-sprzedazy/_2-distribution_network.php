@@ -14,8 +14,15 @@
 							if( have_rows( 'distribution_network_tiles_single_tile' ) ):
 								while( have_rows( 'distribution_network_tiles_single_tile' ) ): the_row();
 
-								$icon = get_sub_field( 'distribution_network_tiles_single_icon' );
-								$textarea = get_sub_field( 'distribution_network_tiles_single_text' );
+								$voivodeship = get_sub_field( 'voivodeship' );
+								$icon = get_sub_field( 'icon' );
+								$name = get_sub_field( 'name' );
+								$addres_1 = get_sub_field( 'addres_1' );
+								$open_hours = get_sub_field( 'open_hours' );
+								$common_days = get_sub_field( 'common_days' );
+								$weekends = get_sub_field( 'weekends' );
+								$tel = get_sub_field( 'tel' );
+								$phone = get_sub_field( 'phone' );
 
 								?>
 
