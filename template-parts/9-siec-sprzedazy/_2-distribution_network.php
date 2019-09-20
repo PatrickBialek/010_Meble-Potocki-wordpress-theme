@@ -37,7 +37,7 @@
 									</div>
 								</div>
 								<div class="distribution-network__row">
-									<span><?php echo $open_hours ?></span>
+									<span class="distribution-network__hours"><?php echo $open_hours ?></span>
 									<span><?php echo $common_days ?></span>
 									<span><?php echo $weekends ?></span>
 									<span><?php echo $tel ?></span>

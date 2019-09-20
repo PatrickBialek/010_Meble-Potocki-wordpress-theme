@@ -1,0 +1,48 @@
+.distribution-network {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	&__container {
+		width: 1300px;
+		width: 80%;
+		padding: 5rem 1rem;
+		text-align: center;
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+
+		& span {
+			line-height: 1.5;
+		}
+	}
+
+	&__voivodeship {
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+
+	&__icon-box {
+		& img {
+			width: 200px;
+		}
+	}
+
+	&__text-box {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		& span {
+			line-height: 1.4;
+		}
+	}
+
+	&__hours {
+		font-weight: bold;
+		margin-top: 20px;
+	}
+}

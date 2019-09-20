@@ -1163,3 +1163,33 @@ main {
       transition: color .2s ease-in-out; }
       .additional-menu__nav-list li a:hover {
         color: #9d7f65; }
+
+.distribution-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .distribution-network__container {
+    width: 1300px;
+    width: 80%;
+    padding: 5rem 1rem;
+    text-align: center; }
+  .distribution-network__row {
+    display: flex;
+    flex-direction: column; }
+    .distribution-network__row span {
+      line-height: 1.5; }
+  .distribution-network__voivodeship {
+    font-size: 1.6rem;
+    font-weight: bold; }
+  .distribution-network__icon-box img {
+    width: 200px; }
+  .distribution-network__text-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .distribution-network__text-box span {
+      line-height: 1.4; }
+  .distribution-network__hours {
+    font-weight: bold;
+    margin-top: 20px; }
