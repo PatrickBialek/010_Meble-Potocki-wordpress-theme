@@ -1174,6 +1174,16 @@ main {
     width: 80%;
     padding: 5rem 1rem;
     text-align: center; }
+  .distribution-network__content-box {
+    display: flex;
+    flex-direction: column; }
+  .distribution-network__tiles-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    @media (max-width: 900px) {
+      .distribution-network__tiles-row {
+        flex-direction: column; } }
   .distribution-network__row {
     display: flex;
     flex-direction: column; }

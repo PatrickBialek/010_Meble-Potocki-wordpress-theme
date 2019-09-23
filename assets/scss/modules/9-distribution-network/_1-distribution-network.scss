@@ -11,6 +11,21 @@
 		text-align: center;
 	}
 
+	&__content-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__tiles-row {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+		@include smallScreen {
+			flex-direction: column;
+		}
+	}
+
 	&__row {
 		display: flex;
 		flex-direction: column;
