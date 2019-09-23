@@ -1,17 +1,17 @@
 <section class="distribution-network">
 	<div class="distribution-network__container">
-		<h1 class="sub-heading sub-heading--black"><?php echo $heading ?></h1>
+		<h1 class="sub-heading sub-heading--black margin-bottom-big"><?php echo $heading ?></h1>
 		<div class="distribution-network__content-box">
 
 		<?php if( have_rows( 'distribution_network_tiles' ) ): 
-			while( have_rows( 'distribution_network_tiles' ) ): the_row(); ?>
+			while( have_rows( 'distribution_network_tiles' ) ): the_row();
 
-				<div class="distribution-network__tiles-row">
+				if( have_rows( 'distribution_network_tiles_row' ) ): 
+					while( have_rows( 'distribution_network_tiles_row' ) ): the_row(); ?>
 
-				<?php if( have_rows( 'distribution_network_tiles_row' ) ): 
-						while( have_rows( 'distribution_network_tiles_row' ) ): the_row();
+						<div class="distribution-network__tiles-row">
 
-							if( have_rows( 'distribution_network_tiles_single_tile' ) ):
+							<?php if( have_rows( 'distribution_network_tiles_single_tile' ) ):
 								while( have_rows( 'distribution_network_tiles_single_tile' ) ): the_row();
 
 								$voivodeship = get_sub_field( 'voivodeship' );
@@ -27,24 +27,30 @@
 
 								?>
 
-								<h3 class="distribution-network__voivodeship"><?php echo $voivodeship ?></h3>
-								<div class="distribution-network__row">
-									<div class="distribution-network__icon-box"><img class="gallery__image" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" /></div>
-									<div class="distribution-network__text-box">
-										<span><?php echo $name ?></span>
-										<span><?php echo $addres_1 ?></span>
-										<span><?php echo $addres_2 ?></span>
+								<div class="distribution-network__box">
+									<h3 class="distribution-network__voivodeship"><?php echo $voivodeship ?></h3>
+									<div class="distribution-network__box-row">
+										<div class="distribution-network__icon-box"><img class="gallery__image" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" /></div>
+										<div class="distribution-network__text-box">
+											<span><?php echo $name ?></span>
+											<span><?php echo $addres_1 ?></span>
+											<span><?php echo $addres_2 ?></span>
+										</div>
+									</div>
+									<div class="distribution-network__box-row">
+										<span class="distribution-network__hours"><?php echo $open_hours ?></span>
+										<span><?php echo $common_days ?></span>
+										<span><?php echo $weekends ?></span>
+										<span><?php echo $tel ?></span>
+										<span><?php echo $mail ?></span>
 									</div>
 								</div>
-								<div class="distribution-network__row">
-									<span class="distribution-network__hours"><?php echo $open_hours ?></span>
-									<span><?php echo $common_days ?></span>
-									<span><?php echo $weekends ?></span>
-									<span><?php echo $tel ?></span>
-									<span><?php echo $mail ?></span>
-								</div>
-								
-					<?php endwhile; endif; endwhile; endif; ?>
+
+							<?php endwhile; endif; ?>
+						
+						</div>
+		
+					<?php endwhile; endif; ?>
 				</div>
 
 		<?php endwhile; endif; ?>

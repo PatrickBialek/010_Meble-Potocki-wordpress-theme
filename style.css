@@ -1184,16 +1184,19 @@ main {
     @media (max-width: 900px) {
       .distribution-network__tiles-row {
         flex-direction: column; } }
-  .distribution-network__row {
+  .distribution-network__box {
+    margin: 1rem 2rem; }
+  .distribution-network__box-row {
     display: flex;
     flex-direction: column; }
-    .distribution-network__row span {
+    .distribution-network__box-row span {
       line-height: 1.5; }
   .distribution-network__voivodeship {
     font-size: 1.6rem;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 2rem; }
   .distribution-network__icon-box img {
-    width: 200px; }
+    max-width: 200px; }
   .distribution-network__text-box {
     display: flex;
     justify-content: center;

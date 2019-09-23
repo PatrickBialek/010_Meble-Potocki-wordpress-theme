@@ -26,7 +26,11 @@
 		}
 	}
 
-	&__row {
+	&__box {
+		margin: 1rem 2rem;
+	}
+
+	&__box-row {
 		display: flex;
 		flex-direction: column;
 
@@ -38,11 +42,12 @@
 	&__voivodeship {
 		font-size: 1.6rem;
 		font-weight: bold;
+		margin-bottom: 2rem;
 	}
 
 	&__icon-box {
 		& img {
-			width: 200px;
+			max-width: 200px;
 		}
 	}
 
