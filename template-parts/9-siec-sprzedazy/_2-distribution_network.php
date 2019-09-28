@@ -24,7 +24,6 @@
 								$weekends = get_sub_field( 'weekends' );
 								$tel = get_sub_field( 'tel' );
 								$mail = get_sub_field( 'mail' );
-
 								?>
 
 								<div class="distribution-network__box">
