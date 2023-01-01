@@ -12,8 +12,8 @@
   "devDependencies": {
     "flickity": "^2.2.0",
     "node-sass": "^4.11.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "jump.js": "^1.0.2"
